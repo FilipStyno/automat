@@ -1,0 +1,42 @@
+<!-- s pomoci videa https://www.youtube.com/watch?v=boI2B4Gpp34&ab_channel=CodeJos-->
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Automat</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- Tabulka pro zobrazení informací o balanci a výhře -->
+<table>
+  <tr>
+    <th>Balanc</th>
+    <th>Celková výhra</th>
+    <th>Momentální výhra</th> <!-- Nově přidaný sloupec -->
+  </tr>
+  <tr>
+    <td id="balance">100 Kč</td> <!-- Aktualizovaná počáteční hodnota -->
+    <td id="win">0 Kč</td>
+    <td id="currentWin">0 Kč</td> <!-- Nově přidaný sloupec -->
+  </tr>
+</table>
+
+<div class="slots">
+    <div class="reel"></div>
+    <div class="reel"></div>
+    <div class="reel"></div>
+</div>
+
+<div id="debug" class="debug"></div>
+
+<img style="position:fixed; left: 0; top: 0; height: 100vh; width: auto;"  src="https://assets.codepen.io/439000/slotreel.webp">
+
+<!-- Přidáno tlačítko -->
+<button id="rollButton">Zatočit (10 Kč)</button>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
